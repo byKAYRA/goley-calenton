@@ -1,0 +1,18 @@
+# Data schema for optional, measured static patches.
+#
+# Never guess an RVA. Add one record only after measuring the exact client build.
+schema_version = 1
+
+[[patch]]
+rva = 0x009374DB
+original_bytes = "81 FE 55 07 00 00"
+patched_bytes = "81 FE 7C 01 00 00"
+note = "Measured 2026-08-16: accept updater-unavailable GameGuard status 380 at the exact initialization gate; login screen reached"
+build_sha256 = "C136E751905FBE60CF27A71D7D05FBDE7C0428484D577F3A0A56766C839EFCFA"
+
+[[patch]]
+rva = 0x0093BB67
+original_bytes = "E8 94 84 BA FF"
+patched_bytes = "B8 55 07 00 00"
+note = "Measured 2026-08-16: first failing periodic GameGuard poll returned 0x262 at RVA 0x0093BB73; report success only to the Error99 consumer while leaving the shared status function unchanged"
+build_sha256 = "C136E751905FBE60CF27A71D7D05FBDE7C0428484D577F3A0A56766C839EFCFA"

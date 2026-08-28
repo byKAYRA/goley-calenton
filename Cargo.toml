@@ -1,0 +1,16 @@
+﻿[workspace]
+members = [
+    "crates/goley-boot",
+    "crates/goley-shim",
+    "crates/goley-launcher-gui",
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }

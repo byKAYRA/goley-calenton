@@ -1,0 +1,43 @@
+﻿[package]
+name = "goley-shim"
+version.workspace = true
+edition.workspace = true
+description = "Data-driven runtime observation shim for the fixed 32-bit Goley client"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["netredirect"]
+# Compiles the Winsock hook implementation. Runtime `entry` configuration is
+# still required, so an all-features build remains side-effect free by default.
+netredirect = []
+
+[dependencies]
+hex = "0.4"
+retour = { version = "0.4.0-alpha.4", default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "2"
+toml = "0.9"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt", "json"] }
+windows = { version = "0.62", features = [
+    "Win32_Foundation",
+    "Win32_Networking_WinSock",
+    "Win32_Security",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_Kernel",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Memory",
+    "Win32_System_ProcessStatus",
+    "Win32_System_SystemServices",
+    "Win32_System_Threading",
+] }
+
+[dev-dependencies]
+tempfile = "3"

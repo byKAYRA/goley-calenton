@@ -1,0 +1,24 @@
+# Cargo & Build outputs
+/target/
+/APP/
+**/*.rs.bk
+*.pdb
+*.rlib
+*.d
+*.obj
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.user
+.env
+.env.*
+
+# Logs, Dumps & Config
+*.log
+*.pcap
+*.pcapng
+goley_launcher_config.json
