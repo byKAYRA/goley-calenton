@@ -1,4 +1,4 @@
-# 🎮 Goley Calenton (İstemci Başlatıcı & Shim Enjeksiyon Sistemi)
+#  Goley Calenton (İstemci Başlatıcı & Shim Enjeksiyon Sistemi)
 
 > [!NOTE]
 > **Bağımsız Proje Bildirimi:** Bu proje, **tamamen bağımsız (standalone)** bir istemci platformudur (`byKAYRA/goley-calenton`). Kendi ayrı deposunda barındırılır ve derlenmesi ya da çalıştırılması için sunucu kaynak kodlarına ihtiyaç duymaz. Herhangi bir uyumlu Goley sunucusuyla (veya yerel [`goley-salgo`](https://github.com/byKAYRA/goley-salgo) ile) birlikte kullanılabilir.
@@ -7,7 +7,7 @@ Bu proje, **Goley (TR)** istemcisinin (`BinaryTr.bin` / `BinaryTr.exe`) modern 6
 
 ---
 
-## 🎯 Projenin Amacı
+##  Projenin Amacı
 
 1. **Koruma Katmanlarını Aşma:** Orijinal istemci içinde bulunan Themida paket açma döngülerini ve eski GameGuard doğrulamalarını (Status 380 gate, Error99 yoklamaları) bellek düzeyinde yamalayarak oyunun çökmeden Login ekranına ulaşmasını sağlamak.
 2. **Erken Bellek Enjeksiyonu (Early Injection):** Askıya alınmış süreç (Suspended Process) oluşturup oyunun PE Giriş Noktasına (OEP) ulaşmadan önce `goley_shim.dll` kütüphanesini enjekte etmek.
@@ -15,7 +15,7 @@ Bu proje, **Goley (TR)** istemcisinin (`BinaryTr.bin` / `BinaryTr.exe`) modern 6
 
 ---
 
-## 📂 Dizin ve Dosya Yapısı
+##  Dizin ve Dosya Yapısı
 
 ```
 goley-calenton/
@@ -46,14 +46,14 @@ goley-calenton/
 
 ---
 
-## 📚 Dokümantasyon ve Araştırma Raporları
+##  Dokümantasyon ve Araştırma Raporları
 
 * **`docs/`**: İstemci başlatma zinciri (`boot.md`), bellek kancalama (Hooking) kayıtları, Themida açma adımları ve RVA analiz kanıtlarını içerir.
 * **`bigpickle.md`**: Goley tersine mühendislik sürecinin tüm aşamalarını, bellek taramalarını (RPM), kart veri şablonlarını (`session+0x3500` RB-tree) ve teknik bulguları detaylandıran kapsamlı durum raporudur.
 
 ---
 
-## ⚙️ Modüller ve Görevleri (Crates)
+##  Modüller ve Görevleri (Crates)
 
 ### 1. `goley-launcher-gui` (Masaüstü Başlatıcı)
 * Saf Windows Win32 API ile geliştirilmiş, harici bağımlılık gerektirmeyen hafif GUI başlatıcıdır.
@@ -74,7 +74,7 @@ goley-calenton/
 
 ---
 
-## 🚀 Derleme ve Çalıştırma
+##  Derleme ve Çalıştırma
 
 ### Gereksinimler
 * [Rust Toolchain](https://www.rust-lang.org/)
@@ -101,10 +101,11 @@ Derlenen tüm dosyalar otomatik olarak **`APP\CALENTON\release\`** klasörüne k
 
 ---
 
-## 💖 Teşekkürler (Special Thanks)
+##  Teşekkürler (Special Thanks)
 
 Bu projenin gelişimine katkıda bulunan ve destek veren değerli topluluk üyelerine teşekkür ederiz:
 
-* [**@AlexRivers**](https://github.com/example-contributor-1) — Tersine mühendislik araştırmaları, PE bellek analizleri ve Themida açma optimizasyonları için.
-* [**@CyberPhantom**](https://github.com/example-contributor-2) — GameGuard bypass yöntemleri, RVA adres analizleri ve dinamik yama mimarisine sağladığı katkılar için.
-* [**@NovaStriker**](https://github.com/example-contributor-3) — İstemci başlatıcı arayüz testleri, hata bildirimleri ve topluluk test süreçlerindeki özverili çalışmaları için.
+* [**@uintptr**](https://github.com/0x1-1) — Verdiğiniz ilham ve topluluğa sunduğunuz işler için...
+* [**@Özkan Çırak**](https://github.com/ozkancirak) — Proje altyapısı, genel plan ve kesilen iletişim için...
+* [**@WlayerX**](https://github.com/WlayerX/goley-server-tools) — Eski projeleri arşivlediğiniz ve dağıttınız için, Teşekkürler.
+* Ayrıca bu misyonla bitirilmiş bir proje zaten var. [**Revival Projesi**](https://playrevival.co)'ni inceleyin.
