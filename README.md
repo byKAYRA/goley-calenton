@@ -1,7 +1,7 @@
-# 🎮 Goley Client (İstemci Başlatıcı & Shim Enjeksiyon Sistemi)
+# 🎮 Goley Calenton (İstemci Başlatıcı & Shim Enjeksiyon Sistemi)
 
 > [!NOTE]
-> **Bağımsız Proje Bildirimi:** Bu proje, **tamamen bağımsız (standalone)** bir istemci platformudur. Kendi ayrı deposunda (repository) barındırılır ve derlenmesi ya da çalıştırılması için sunucu kaynak kodlarına ihtiyaç duymaz. Herhangi bir uyumlu Goley sunucusuyla (veya yerel `goley-server` ile) birlikte kullanılabilir.
+> **Bağımsız Proje Bildirimi:** Bu proje, **tamamen bağımsız (standalone)** bir istemci platformudur (`byKAYRA/goley-calenton`). Kendi ayrı deposunda barındırılır ve derlenmesi ya da çalıştırılması için sunucu kaynak kodlarına ihtiyaç duymaz. Herhangi bir uyumlu Goley sunucusuyla (veya yerel [`goley-salgo`](https://github.com/byKAYRA/goley-salgo) ile) birlikte kullanılabilir.
 
 Bu proje, **Goley (TR)** istemcisinin (`BinaryTr.bin` / `BinaryTr.exe`) modern 64-bit/32-bit Windows sistemlerinde bağımsız olarak başlatılabilmesi, koruma mekanizmalarının aşılması ve yerel/özel sunucu emülatörüne bağlanabilmesi için geliştirilmiş tersine mühendislik ve istemci başlatma platformudur.
 
@@ -18,7 +18,7 @@ Bu proje, **Goley (TR)** istemcisinin (`BinaryTr.bin` / `BinaryTr.exe`) modern 6
 ## 📂 Dizin ve Dosya Yapısı
 
 ```
-goley-client/
+goley-calenton/
 ├── .cargo/
 │   └── config.toml               # Derleme ayarları (target-dir = "APP")
 ├── APP/
@@ -97,7 +97,7 @@ Derlenen tüm dosyalar otomatik olarak **`APP\CALENTON\release\`** klasörüne k
 3. **GOLEY'İ BAŞLAT** butonuna basın.
 
 > [!WARNING]
-> Eğer sunucu (`goley-server`) arka planda açık değilse, oyun istemcisi Login ekranında sunucu yanıtı alamayacağı için kapanabilir veya çökebilir. Oyuna girmeden önce sunucuyu başlatmanız önerilir.
+> Eğer sunucu ([`goley-salgo`](https://github.com/byKAYRA/goley-salgo)) arka planda açık değilse, oyun istemcisi Login ekranında sunucu yanıtı alamayacağı için kapanabilir veya çökebilir. Oyuna girmeden önce sunucuyu başlatmanız önerilir.
 
 ---
 
