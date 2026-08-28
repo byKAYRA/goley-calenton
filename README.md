@@ -3,7 +3,7 @@
 > [!NOTE]
 > **Bağımsız Proje Bildirimi:** Bu proje, **tamamen bağımsız (standalone)** bir istemci platformudur (`byKAYRA/goley-calenton`). Kendi ayrı deposunda barındırılır ve derlenmesi ya da çalıştırılması için sunucu kaynak kodlarına ihtiyaç duymaz. Herhangi bir uyumlu Goley sunucusuyla (veya yerel [`goley-salgo`](https://github.com/byKAYRA/goley-salgo) ile) birlikte kullanılabilir.
 
-Bu proje, **Goley (TR)** istemcisinin (`BinaryTr.bin` / `BinaryTr.exe`) modern 64-bit/32-bit Windows sistemlerinde bağımsız olarak başlatılabilmesi, koruma mekanizmalarının aşılması ve yerel/özel sunucu emülatörüne bağlanabilmesi için geliştirilmiş tersine mühendislik ve istemci başlatma platformudur.
+Bu proje, **Goley (TR)** istemcisinin (`Projeye dahil değildir. Ayrı kurulum gerektirir`) modern 64-bit/32-bit Windows sistemlerinde bağımsız olarak başlatılabilmesi, koruma mekanizmalarının aşılması ve yerel/özel sunucu emülatörüne bağlanabilmesi için geliştirilmiş tersine mühendislik ve istemci başlatma platformudur.
 
 ---
 
